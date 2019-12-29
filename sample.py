@@ -1,20 +1,21 @@
-# For example,
-# Given [ [0, 30], [5, 10], [15, 20] ],
-# return false.
+# Comment
+# Hello World
 
-# [0, 30], [5, 10], [15, 20]
-# [0, 1] , [2, 3], [4,5]
-# [0, 1] , [2, 5], [4, 6]
+'''
+hello
+world
+'''
 
-# sort based on start
-# previous end is greater than current start => return False
-
+"""
+hello
+world
+"""
 
 def meeting_rooms(intervals):
     intervals.sort(key=lambda x:x[0])
-    print ("asdf")
     for i in range(1, len(intervals)):
-        if intervals[i-1][1] > intervals[i][0]:
+        if intervals[i-1][1] > \ # indent
+		intervals[i][0]:
             return False
     return True
 
